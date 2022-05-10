@@ -1,23 +1,33 @@
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(379px, 9fr));
-  grid-gap: 2.5rem;
-  margin-top: 18.75rem;
-    
+  
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+  }
+  .page{
+    width: 100%;
   }
 
-  .SearchAndLanguageContainer{
+  .SearchAndLanguage{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 95%;
     margin-top: 1rem;
     height: 8.8rem;
 }
 .searchBar{
   margin-bottom: auto;
+}
+.cardsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2.5rem;
+  margin-top: 11.75rem;
+  width: 72%;
 }
   
   @media only screen and (max-width: 400px) {
@@ -28,12 +38,28 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
       grid-gap: 1.5rem;
-      margin-top: 8.25rem ;
+      
     }
-    
+    .cardsContainer{
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 10rem;
+    width: 100%;
+    }
+    .SearchAndLanguage{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+   
+    gap: 1rem;
+    }
   }
 
-  @media only screen and (min-width: 400px) and (max-width: 550px) {
+  @media only screen and (min-width: 400px) and (max-width: 1050px) {
     .paginationContainer {
       display: flex;
     align-items: center;
@@ -44,6 +70,22 @@
     height: 4.5rem;
     margin-left:1.625rem;
   }
-    
+  .SearchAndLanguage{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+ 
+  gap: 1rem;
+  }
+    .cardsContainer{
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 10rem;
+    width: 100%;
+    }
    
   }

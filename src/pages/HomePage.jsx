@@ -18,7 +18,8 @@ const HomePage = () => {
       <div>
         <Header />
       </div>
-      <div className="SearchAndLanguageContainer">
+      <div className="page">
+      <div className="SearchAndLanguage">
         <div className="searchBar">
           <SearchBar />
         </div>
@@ -27,6 +28,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="container">
+        <div className="cardsContainer">
         {heros.map(
           (
             hero,
@@ -35,6 +37,9 @@ const HomePage = () => {
             <Card key={index} hero={hero} />
           )
         )}
+        </div>
+      </div>
+     
       </div>
       <div className="paginationContainer">
         <Pagination />

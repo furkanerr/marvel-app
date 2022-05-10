@@ -28,12 +28,13 @@
   gap: 1rem;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 .searchCancelIcon {
   position: relative;
   z-index: 2;
   bottom: 60px;
-  left:  18rem;;
+  left:  35rem;;
 }
 .FoundCharactersContainer {
   display: flex;
@@ -109,7 +110,7 @@
   color: #ffffff;
   padding: 1rem;
   position: absolute;
-  bottom: 34.5rem;
+  bottom: -149px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -131,7 +132,7 @@
   position: relative;
   z-index: 2;
   bottom: 60px;
-  left: 8rem;
+  left: 16rem;
 }
 }
 @media only screen and (min-width: 375px) and (max-width: 600px) {
@@ -159,15 +160,16 @@
   color: #ffffff;
   padding: 1rem;
   position: absolute;
-  bottom: 34.5rem;
+  bottom: -149px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   border-radius: 0.5rem;
+  z-index: 5;
 }
 .CharacterNotFound {
-  position: relative;
-  bottom: 3.7rem;
+  position: absolute;
+  bottom: -2.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,12 +178,13 @@
   background-color: #434343;
   color: #ffffff;
   padding: 2rem;
+  z-index: 999;
 }
 .searchCancelIcon {
   position: relative;
   z-index: 2;
   bottom: 60px;
-  left: 8rem;
+  left: 16rem;
 }
 
 }
@@ -190,7 +193,7 @@
     position: relative;
     z-index: 2;
     bottom: 60px;
-    left: 8rem;
+    left: 16rem;
   }
   .SearchBar {
     width: 18.063rem!important;
@@ -211,16 +214,16 @@
   display: flex!important;
   flex-direction: column!important;
   justify-content: center!important;
-  width: 17rem!important;
+  width: 16rem!important;
   background-color: #434343!important;
   color: #ffffff;
   padding: 1rem!important;
-  position: absolute!important;
-  bottom: 25.6rem!important;
+  
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   border-radius: 0.5rem;
+  z-index: 5;
 }
 .CharacterNotFound {
   position: absolute!important;

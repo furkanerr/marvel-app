@@ -21,7 +21,7 @@ function CharacterDetailPage() {
   console.log(characterDetail);
 
   return (
-    <divc className="characterDetailContainer">
+    <div className="characterDetailContainer">
       <Header />
       <div className="SearchAndLanguageContainer">
         <div className="searchBar">
@@ -63,7 +63,7 @@ function CharacterDetailPage() {
           </div>
         </div>
       </div>
-    </divc>
+    </div>
   );
 }
 

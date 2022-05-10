@@ -10,7 +10,17 @@
   margin-bottom: 5.25rem;;
   border: 1px solid #ffffff;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
   }
+  .portrait:hover{
+    border: 1px solid #5d5b5b;
+    transform: scale(1.05);
+    background-color: #363535;
+  }
+  .portrait:hover .hero{
+    transform: translateY(-0.5rem);
+  }
+
   .heroName {
     width: 7.813rem;
     height:1.5rem;
@@ -27,7 +37,10 @@
   .hero {
     width: 13.5rem;
     height: 20.25rem;
+    transition: all 0.3s;
+    
   }
+
   .line {
     position: absolute;
     width: 13.5rem;

@@ -1,4 +1,3 @@
-# Live
-**https://marvel-by-furkaner.netlify.app/**
+# Live: https://marvel-by-furkaner.netlify.app/
 
 
